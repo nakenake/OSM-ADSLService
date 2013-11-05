@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com:modelEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://www.mslv.com/studio/core/model/common" xmlns:ord="http://xmlns.oracle.com/communications/sce/osm/model/order" xmlns="http://xmlns.oracle.com/communications/sce/osm/model/order" xmlns:prov="http://xmlns.oracle.com/communications/sce/osm/model/provisioning" xsi:type="ord:orderStatePolicyType" name="ADSLServiceLifecycle">
+  <com:displayName>ADSLServiceLifecycle</com:displayName>
+  <com:saveVersion>2</com:saveVersion>
+  <com:id>odkTfSYQ--+oy7tWeTp+9w</com:id>
+  <ord:completedOrderState>
+    <ord:updateOrderTransaction>
+      <ord:permission name="Permission">
+        <ord:workgroup>
+          <com:entity>Automation</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+        <ord:workgroup>
+          <com:entity>CustomerService</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+      </ord:permission>
+    </ord:updateOrderTransaction>
+  </ord:completedOrderState>
+  <ord:inProgressState>
+    <ord:raiseExceptionTransaction>
+      <ord:permission name="Permission">
+        <ord:workgroup>
+          <com:entity>Automation</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+        <ord:workgroup>
+          <com:entity>CustomerService</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+      </ord:permission>
+    </ord:raiseExceptionTransaction>
+    <ord:updateOrderTransaction>
+      <ord:permission name="Permission">
+        <ord:workgroup>
+          <com:entity>Automation</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+        <ord:workgroup>
+          <com:entity>CustomerService</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+      </ord:permission>
+    </ord:updateOrderTransaction>
+  </ord:inProgressState>
+  <ord:notStartedOrderState>
+    <ord:deleteOrderTransaction>
+      <ord:permission name="Permission">
+        <ord:workgroup>
+          <com:entity>Automation</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+        <ord:workgroup>
+          <com:entity>CustomerService</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+      </ord:permission>
+    </ord:deleteOrderTransaction>
+    <ord:updateOrderTransaction>
+      <ord:permission name="Permission">
+        <ord:workgroup>
+          <com:entity>Automation</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+        <ord:workgroup>
+          <com:entity>CustomerService</com:entity>
+          <com:entityType>rolePermissions</com:entityType>
+          <com:relationship>com.mslv.studio.provisioning.order.orderPolicy.role</com:relationship>
+        </ord:workgroup>
+      </ord:permission>
+    </ord:updateOrderTransaction>
+  </ord:notStartedOrderState>
+</com:modelEntity>

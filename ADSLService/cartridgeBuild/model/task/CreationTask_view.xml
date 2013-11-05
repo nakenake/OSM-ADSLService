@@ -1,0 +1,190 @@
+<view name="CreationTask" xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+   <description>CreationTask</description>
+   <stylesheet/>
+   <printStylesheet/>
+	<viewNode element="Customer">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="FirstName">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="LastName">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="CustomerAddress">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="TelephoneNumber">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>3</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="AccountNumber">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+	<viewNode element="ProvisionState">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+	<viewNode element="SalesOrderLineGroup">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>100</maxOccurs>
+	
+	<viewNode element="Address">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="Street">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Number">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="City">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="PostalCode">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="State">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="SalesOrderLine">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>10</maxOccurs>
+	
+	<viewNode element="Product">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Speed">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Profile">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="ServiceId">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="InventoryData">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="Port">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="DslamName">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="CentralId">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="ErrorNotes">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="ActivationData">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="ErrorNotes">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="LogisticData">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="ShipCode">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+	<viewNode element="StartDate">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</view>

@@ -1,0 +1,66 @@
+			
+<orderDefinition xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">	
+	<orderType>ADSLServiceOrder</orderType>
+	<orderSource>ADSLServiceOrder</orderSource>
+	<orderStatePolicy>ADSLServiceLifecycle</orderStatePolicy> 
+	<name>ADSLServiceOrder</name>
+	<description>ADSLServiceOrder order entry task</description>	
+	<orderTemplate>
+		<orderData>/Customer</orderData>
+		<orderData>/Customer/FirstName</orderData>
+		<orderData>/Customer/LastName</orderData>
+		<orderData>/Customer/CustomerAddress</orderData>
+		<orderData>/Customer/TelephoneNumber</orderData>
+		<orderData>/Customer/AccountNumber</orderData>
+		<orderData>/ProvisionState</orderData>
+		<orderData>/SalesOrderLineGroup</orderData>
+		<orderData>/SalesOrderLineGroup/Address</orderData>
+		<orderData>/SalesOrderLineGroup/Address/Street</orderData>
+		<orderData>/SalesOrderLineGroup/Address/Number</orderData>
+		<orderData>/SalesOrderLineGroup/Address/City</orderData>
+		<orderData>/SalesOrderLineGroup/Address/PostalCode</orderData>
+		<orderData>/SalesOrderLineGroup/Address/State</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/Product</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/Speed</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/Profile</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/ServiceId</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/InventoryData</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/ActivationData</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/LogisticData</orderData>
+		<orderData>/SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</orderData>
+		<orderData>/StartDate</orderData>
+
+
+	</orderTemplate>
+	<entryView>CreationTask</entryView>
+	<defaultProcess>ADSLService_Proccess</defaultProcess>
+
+	
+
+	<taskView>
+		<task>VerifyTask</task>
+		<view>VerifyTask</view>		
+	</taskView>
+	<taskView>
+		<task>Inventory</task>
+		<view>Inventory</view>		
+	</taskView>
+	<taskView>
+		<task>Error</task>
+		<view>Error</view>		
+	</taskView>
+	<taskView>
+		<task>Shipping</task>
+		<view>Shipping</view>		
+	</taskView>
+	<taskView>
+		<task>CreationTask</task>
+		<view>CreationTask</view>		
+	</taskView>
+</orderDefinition>

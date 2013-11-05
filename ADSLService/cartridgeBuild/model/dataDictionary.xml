@@ -1,0 +1,337 @@
+<dataDictionary xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25"> 
+	<element name="ShipCode"  xsi:type="textType">
+	
+		<description>Ship Code</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Ship Code</description>			<label lang="en">&#039;ShipCode&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Speed"  xsi:type="lookupType">
+	
+		<description>Speed</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Speed</description>			<label lang="en">&#039;Speed&#039;</label>
+		</viewRule>
+		
+		
+			<lookupEntry>
+				<code>1</code>
+				<description>6MB</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>2</code>
+				<description>20MB</description>
+			</lookupEntry>
+	</element>	
+	<element name="ServiceId"  xsi:type="textType">
+	
+		<description>Service Id</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Service Id</description>			<label lang="en">&#039;ServiceId&#039;</label>
+		</viewRule>
+		
+		
+				<length>10</length>
+		
+	</element>
+	<element name="AccountNumber"  xsi:type="textType">
+	
+		<description>Account Number</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Account Number</description>			<label lang="en">&#039;AccountNumber&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Number"  xsi:type="textType">
+	
+		<description>Number</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Number</description>			<label lang="en">&#039;Number&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Product"  xsi:type="lookupType">
+	
+		<description>Product</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Product</description>			<label lang="en">&#039;Product&#039;</label>
+		</viewRule>
+		
+		
+			<lookupEntry>
+				<code>1</code>
+				<description>ADSL</description>
+			</lookupEntry>
+	</element>	
+	<element name="ErrorNotes"  xsi:type="textType">
+	
+		<description>Error Notes</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Error Notes</description>			<label lang="en">&#039;ErrorNotes&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="CustomerAddress"  xsi:type="textType">
+	
+		<description>Customer Address</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Customer Address</description>			<label lang="en">&#039;CustomerAddress&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="DslamName"  xsi:type="textType">
+	
+		<description>Dslam Name</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Dslam Name</description>			<label lang="en">&#039;DslamName&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Port"  xsi:type="textType">
+	
+		<description>Port</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Port</description>			<label lang="en">&#039;Port&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Address"  xsi:type="groupType">
+	
+		<description>Address</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Address</description>			<label lang="en">&#039;Address&#039;</label>
+		</viewRule>
+		
+	</element>	
+	<element name="SalesOrderLine"  xsi:type="groupType">
+	
+		<description>Sales Order Line</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Sales Order Line</description>			<label lang="en">&#039;SalesOrderLine&#039;</label>
+		</viewRule>
+		
+	</element>	
+	<element name="FirstName"  xsi:type="textType">
+	
+		<description>First Name</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> First Name</description>			<label lang="en">&#039;FirstName&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="ActivationData"  xsi:type="groupType">
+	
+		<description>Activation Data</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Activation Data</description>			<label lang="en">&#039;ActivationData&#039;</label>
+		</viewRule>
+		
+	</element>	
+	<element name="StartDate"  xsi:type="dateType">
+	
+		<description>Start Date</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Start Date</description>			<label lang="en">&#039;StartDate&#039;</label>
+		</viewRule>
+		
+				
+	</element>
+	<element name="CentralId"  xsi:type="textType">
+	
+		<description>Central Id</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Central Id</description>			<label lang="en">&#039;CentralId&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="City"  xsi:type="textType">
+	
+		<description>City</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> City</description>			<label lang="en">&#039;City&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="LogisticData"  xsi:type="groupType">
+	
+		<description>Logistic Data</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Logistic Data</description>			<label lang="en">&#039;LogisticData&#039;</label>
+		</viewRule>
+		
+	</element>	
+	<element name="TelephoneNumber"  xsi:type="textType">
+	
+		<description>Telephone Number</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Telephone Number</description>			<label lang="en">&#039;TelephoneNumber&#039;</label>
+		</viewRule>
+		
+		
+				<length>9</length>
+		
+	</element>
+	<element name="Customer"  xsi:type="groupType">
+	
+		<description>Customer</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Customer</description>			<label lang="en">&#039;Customer&#039;</label>
+		</viewRule>
+		
+	</element>	
+	<element name="SalesOrderLineGroup"  xsi:type="groupType">
+	
+		<description>Sales Order Line Group</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Sales Order Line Group</description>			<label lang="en">&#039;SalesOrderLineGroup&#039;</label>
+		</viewRule>
+		
+	</element>	
+	<element name="State"  xsi:type="textType">
+	
+		<description>State</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> State</description>			<label lang="en">&#039;State&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Profile"  xsi:type="lookupType">
+	
+		<description>Profile</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Profile</description>			<label lang="en">&#039;Profile&#039;</label>
+		</viewRule>
+		
+		
+			<lookupEntry>
+				<code>1</code>
+				<description>High</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>2</code>
+				<description>Medium</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>3</code>
+				<description>Low</description>
+			</lookupEntry>
+	</element>	
+	<element name="PostalCode"  xsi:type="textType">
+	
+		<description>Postal Code</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Postal Code</description>			<label lang="en">&#039;PostalCode&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="Street"  xsi:type="textType">
+	
+		<description>Street</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Street</description>			<label lang="en">&#039;Street&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="ProvisionState"  xsi:type="textType">
+	
+		<description>Provision State</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Provision State</description>			<label lang="en">&#039;ProvisionState&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="LastName"  xsi:type="textType">
+	
+		<description>Last Name</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Last Name</description>			<label lang="en">&#039;LastName&#039;</label>
+		</viewRule>
+		
+		
+				<length>40</length>
+		
+	</element>
+	<element name="InventoryData"  xsi:type="groupType">
+	
+		<description>Inventory Data</description>
+		<viewRule xsi:type="informationRuleType">
+
+		<description> Inventory Data</description>			<label lang="en">&#039;InventoryData&#039;</label>
+		</viewRule>
+		
+	</element>	
+     
+	<schemaFile>dataDictionary/ADSLService/ADSLService.xsd</schemaFile>
+</dataDictionary>

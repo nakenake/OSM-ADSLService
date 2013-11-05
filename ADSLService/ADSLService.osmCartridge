@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com:modelEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.oracle.com/communications/sce/osm/model/cartridge" xmlns:cart="http://xmlns.oracle.com/communications/sce/osm/model/cartridge" xmlns:com="http://www.mslv.com/studio/core/model/common" xmlns:prov="http://xmlns.oracle.com/communications/sce/osm/model/provisioning" xsi:type="provisioningCartridgeType" name="ADSLService">
+  <com:displayName lang="[default]">ADSLService</com:displayName>
+  <com:saveVersion>7</com:saveVersion>
+  <com:id>---dnXIC--+z---h--+WMw</com:id>
+  <com:provider>OSM Cartridge Provider</com:provider>
+  <com:version>
+    <com:major>1</com:major>
+    <com:minor>0</com:minor>
+    <com:maintenance>0</com:maintenance>
+    <com:servicePack>0</com:servicePack>
+    <com:eFix>0</com:eFix>
+  </com:version>
+  <com:targetApplicationVersion>
+    <com:major>7</com:major>
+    <com:minor>2</com:minor>
+    <com:maintenance>0</com:maintenance>
+  </com:targetApplicationVersion>
+  <com:sealed>false</com:sealed>
+  <com:deploymentList displayName="Orders" includeAll="true" relationship="com.mslv.studio.provisioning.cartridge.packageActions">
+    <com:modelID>com.mslv.studio.provisioning.order</com:modelID>
+    <com:elementLocationName>model</com:elementLocationName>
+  </com:deploymentList>
+  <com:deploymentList displayName="Java Libraries" includeAll="true" relationship="com.mslv.studio.provisioning.cartridge.packageLibrary">
+    <com:extension>jar</com:extension>
+    <com:elementLocationName>lib</com:elementLocationName>
+  </com:deploymentList>
+  <com:deploymentList displayName="Resources" includeAll="true" relationship="com.mslv.studio.provisioning.cartridge.packageResources">
+    <com:extension>*</com:extension>
+    <com:elementLocationName>resources</com:elementLocationName>
+  </com:deploymentList>
+  <com:propertyCategory name="Cartridge Management">
+    <com:property name="PURGE_CARTRIDGE_BEFORE_DEPLOY">
+      <com:defaultValue>false</com:defaultValue>
+    </com:property>
+    <com:property name="ENTITY_CONFLICT_ACTION_ON_DEPLOY">
+      <com:defaultValue>replace</com:defaultValue>
+    </com:property>
+    <com:property name="PURGE_ORDER_ON_UNDEPLOY">
+      <com:defaultValue>true</com:defaultValue>
+    </com:property>
+  </com:propertyCategory>
+  <com:propertyCategory name="Model">
+    <com:property name="DEFAULT_AUTOMATION_USER">
+      <com:defaultValue>oms-automation</com:defaultValue>
+    </com:property>
+    <com:property name="DEFAULT_REQUEST_QUEUE">
+      <com:defaultValue>osm_event</com:defaultValue>
+    </com:property>
+    <com:property name="DEFAULT_RESPONSE_QUEUE">
+      <com:defaultValue>osm_event</com:defaultValue>
+    </com:property>
+    <com:property name="DEFAULT_MESSAGE_PROPERTY_SELECTOR">
+      <com:defaultValue>MESSAGE_NAME = ''</com:defaultValue>
+    </com:property>
+    <com:property name="ACTIVATION_ENVIRONMENT_ID">
+      <com:defaultValue>ENV1</com:defaultValue>
+    </com:property>
+    <com:property name="JNDI_LOGISTIC_REQUEST_QUEUE">
+      <com:defaultValue>osmcs/jms/logistic/request</com:defaultValue>
+    </com:property>
+    <com:property name="JNDI_LOGISTIC_RESPONSE_QUEUE">
+      <com:defaultValue>osmcs/jms/logistic/response</com:defaultValue>
+    </com:property>
+    <com:property name="JNDI_INVENTORY_REQUEST_QUEUE">
+      <com:defaultValue>osmcs/jms/inventory/request</com:defaultValue>
+    </com:property>
+    <com:property name="JNDI_INVENTORY_RESPONSE_QUEUE">
+      <com:defaultValue>osmcs/jms/inventory/response</com:defaultValue>
+    </com:property>
+    <com:property name="JNDI_CRM_REQUEST_QUEUE">
+      <com:defaultValue>osmcs/jms/crm/request</com:defaultValue>
+    </com:property>
+  </com:propertyCategory>
+  <com:dependencyViolationErrorLevel>error</com:dependencyViolationErrorLevel>
+  <activationEnvID></activationEnvID>
+  <activationResponseQueue></activationResponseQueue>
+  <cacheMaxSize>50</cacheMaxSize>
+  <cacheTimeout>60</cacheTimeout>
+</com:modelEntity>

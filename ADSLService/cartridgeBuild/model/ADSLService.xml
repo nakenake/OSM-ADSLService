@@ -1,0 +1,138 @@
+<cartridge namespace="ADSLService" version="1.0.0.0.0" 
+    xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xi="http://www.w3.org/2001/XInclude" 
+    xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25"    
+    xmlns:model="http://xmlns.oracle.com/communications/ordermanagement/model">	
+		<description>ADSLService</description>
+		<default>true</default>
+		<timestamp>2007-02-01T21:31:09</timestamp>
+		<state name="accepted">
+		   	<description>Accepted</description>
+		</state>
+		<state name="assigned">
+		   	<description>Assigned</description>
+		</state>
+		<state name="WaitingForInventoryResponse">
+		   	<description>Waiting for inventory response</description>
+		</state>
+		<state name="received">
+		   	<description>Received</description>
+		</state>
+		<state name="WaitingForShippingResponse">
+		   	<description>Waiting for shipping response</description>
+		</state>
+		<state name="completed">
+		   	<description>Completed</description>
+		</state> 
+ 		<status name="all_subprocess_threads_complete">
+		   	<description>N/A</description>
+		   	<allowableConstraintViolationSeverity>CRITICAL</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="finish">
+		   	<description>Finish</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="failure">
+		   	<description>Failure</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="next">
+		   	<description>Next</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="back">
+		   	<description>Back</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="cancel">
+		   	<description>Cancel</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="success">
+		   	<description>Success</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<xi:include href="task/VerifyTask.xml"/>
+ 		<xi:include href="task/VerifyTask_view.xml"/>
+ 		
+ 		
+ 		<xi:include href="task/Inventory.xml"/>
+ 		<xi:include href="task/Inventory_view.xml"/>
+ 		
+ 		
+ 		<xi:include href="task/Error.xml"/>
+ 		<xi:include href="task/Error_view.xml"/>
+ 		
+ 		
+ 		<xi:include href="task/Shipping.xml"/>
+ 		<xi:include href="task/Shipping_view.xml"/>
+ 		
+ 		
+ 		<xi:include href="task/CreationTask.xml"/>
+ 		<xi:include href="task/CreationTask_view.xml"/>
+ 		
+ 			
+		<task name="start1" xsi:type="ruleTaskType">
+			<description>start1</description>
+			<state>completed</state>
+			<state>received</state>
+			<status>true</status>
+	   		<condition>null_rule</condition>
+			<compensationStrategy>
+				<onTaskReevaluate>redo</onTaskReevaluate>
+			</compensationStrategy>
+		</task>
+ 	 	<xi:include href="process/ADSLService_Proccess.xml"/>
+ 	 	
+        
+		<xi:include href="dataDictionary.xml"/>
+		<xi:include href="masterOrderTemplate.xml"/>		
+ 		<xi:include href="orderLifecyclePolicy/ADSLServiceLifecycle.xml"/>
+ 		<xi:include href="order/ADSLServiceOrder.xml"/>
+ 		<xi:include href="order/ADSLServiceOrder_orderType.xml"/>
+	 	<xi:include href="order/ADSLServiceOrder_orderSource.xml"/>
+		<workgroup name="CustomerService">
+	   		
+	 	
+				<permissions>
+			
+ 				<orderEntry>
+        			<orderType>ADSLServiceOrder</orderType>
+		     	   <orderSource>ADSLServiceOrder</orderSource>
+				</orderEntry>
+ 	 			<task executionModes="do">VerifyTask</task>
+ 	 			<task executionModes="do">Inventory</task>
+ 	 			<task executionModes="do">Error</task>
+ 	 			<task executionModes="do">Shipping</task>
+ 	 			<task executionModes="do">CreationTask</task>
+   			</permissions>
+		</workgroup>
+		<workgroup name="Automation">
+	   		
+	 	
+				<permissions>
+			
+ 				<orderEntry>
+        			<orderType>ADSLServiceOrder</orderType>
+		     	   <orderSource>ADSLServiceOrder</orderSource>
+				</orderEntry>
+ 	 			<task executionModes="do">VerifyTask</task>
+ 	 			<task executionModes="do">Inventory</task>
+ 	 			<task executionModes="do">Error</task>
+ 	 			<task executionModes="do">Shipping</task>
+ 	 			<task executionModes="do">CreationTask</task>
+   			</permissions>
+		</workgroup>
+        <xi:include href="orchestrationModel/ADSLService.xml"/>
+      <model:resource name="ADSLService" namespace="ADSLService">
+         <model:description>resource files</model:description>
+         <model:location>resources/resources.zip</model:location>
+      </model:resource>
+      <model:xmlCatalog name="ADSLService" namespace="ADSLService">
+         <model:description>xml catalogs</model:description>
+         <model:location>xmlCatalogs/catalogs.zip</model:location>
+      </model:xmlCatalog>         
+</cartridge>
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns="http://www.metasolv.com/CartridgeManifest/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Identification>
+        <Name>ADSLService</Name>
+        <Version>1.0.0.0.0</Version>
+        <Type>OSM</Type>
+        <BuildID>100</BuildID>
+    </Identification>
+    <Component>
+        <Type>ModelComponentType</Type>
+        <Location>/OSMModel.xml</Location>
+    </Component>
+    <Component>
+        <Type>PluginComponentType</Type>
+        <Location>/automation/osm_ADSLService_1_0_0_0_0.ear</Location>
+    </Component>
+    <Component>
+        <Type>UserWorkgroupComponentType</Type>
+        <Location>/userConfig/userConfig.xml</Location>
+    </Component>
+    <Component>
+        <Type>xmlCatalogType</Type>
+        <Location>xmlCatalogs/catalogs.zip</Location>
+    </Component>
+    <Component>
+        <Type>ResourceType</Type>
+        <Location>resources/resources.zip</Location>
+    </Component>
+</Manifest>

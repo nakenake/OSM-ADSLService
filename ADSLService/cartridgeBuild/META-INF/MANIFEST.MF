@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ADSLService
+Bundle-Name: ADSLService
+Bundle-Description: ADSLService
+Bundle-Version: 1.0.0.0.0
+Bundle-BuildTime: 2013-11-05 09:28:01
+Bundle-BuildNumber: 100
+Bundle-Category: OSM
+Bundle-Vendor: OSM Cartridge Provider
+Bundle-RequiredExecutionEnvironment: Oracle-Communications/OSM-7.2.0,
+ JavaSE-1.6
+Bundle-RequiredTargetVersion: 7.2.0

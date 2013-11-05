@@ -1,0 +1,3 @@
+<model:orchestrationModel xmlns:model="http://xmlns.oracle.com/communications/ordermanagement/model" name="ADSLService" namespace="ADSLService">
+  <model:description>ADSLService</model:description>
+</model:orchestrationModel>

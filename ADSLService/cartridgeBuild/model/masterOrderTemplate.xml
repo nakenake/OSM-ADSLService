@@ -1,0 +1,36 @@
+
+<masterOrderTemplate 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+        <dataNode element="Customer"  ><dataNode element="FirstName"   />
+<dataNode element="LastName"   />
+<dataNode element="CustomerAddress"   />
+<dataNode element="TelephoneNumber"   />
+<dataNode element="AccountNumber"   />
+
+        </dataNode>
+        <dataNode element="ProvisionState"  />
+        <dataNode element="SalesOrderLineGroup"  ><dataNode element="Address"  ><dataNode element="Street"   />
+<dataNode element="Number"   />
+<dataNode element="City"   />
+<dataNode element="PostalCode"   />
+<dataNode element="State"   />
+ </dataNode>
+<dataNode element="SalesOrderLine"  ><dataNode element="Product"   />
+<dataNode element="Speed"   />
+<dataNode element="Profile"   />
+<dataNode element="ServiceId"   />
+<dataNode element="InventoryData"  ><dataNode element="Port"   />
+<dataNode element="DslamName"   />
+<dataNode element="CentralId"   />
+<dataNode element="ErrorNotes"   />
+ </dataNode>
+<dataNode element="ActivationData"  ><dataNode element="ErrorNotes"   />
+ </dataNode>
+<dataNode element="LogisticData"  ><dataNode element="ShipCode"   />
+ </dataNode>
+ </dataNode>
+
+        </dataNode>
+        <dataNode element="StartDate"  />
+</masterOrderTemplate>

@@ -1,0 +1,11 @@
+<model xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" targetNamespace="http://www.change-me.com/change/me/2001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+	<schemaVersion>7.0.0</schemaVersion>
+	<version>
+		<label>7.2.0</label>
+		<majorVersion>1.0</majorVersion>
+	</version>
+	
+	<xi:include href="workgroup/CustomerService.xml"/>
+	<xi:include href="workgroup/Automation.xml"/>
+	<xi:include href="model/ADSLService.xml"/>	
+</model>

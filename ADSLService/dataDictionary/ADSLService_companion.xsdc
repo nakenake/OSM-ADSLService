@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com:modelEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://www.mslv.com/studio/core/model/common" xmlns="http://www.mslv.com/studio/core/model/common" xmlns:data="http://www.oracle.com/communications/studio/core/model/common/data" xmlns:layout="http://xmlns.oracle.com/communications/sce/poms/model/layout" xmlns:poms="http://xmlns.oracle.com/communications/sce/poms/model/poms" xmlns:provisioning="http://xmlns.oracle.com/communications/sce/osm/model/provisioning" xmlns:specification="http://www.mslv.com/studio/inventory/model/specification" xsi:type="com:dataDictionaryCompanionType" name="ADSLService_companion">
+  <com:displayName>CableService</com:displayName>
+  <com:saveVersion>27</com:saveVersion>
+  <com:id>--+7---M--+L--+5--+5IA</com:id>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>Customer</com:element>
+    <com:elementType>Customer</com:elementType>
+    <com:baseElement>(Reusable Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>Customer</com:dataElementId>
+    <com:displayName>Customer</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:minCardinality>0</com:minCardinality>
+    <com:maxCardinality>1</com:maxCardinality>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>xcAa5nk0--+D--+4--+CnA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>Customer</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:abstract>false</data:abstract>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+lSnFh--+v--+V0p1y1A</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>Customer</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>--+o---z--+d--+0-W9Clw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>Customer</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>EPky--+6--+1pAd1FyoYhg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>Customer</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>--+1--+q--+f---J--+sGA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>Customer</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>Customer/FirstName</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>Customer/FirstName</com:dataElementId>
+    <com:displayName>First Name</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---X3tMy--+T--+L---btA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>Customer/FirstName</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>N4Z8---q--+AjMYu---hDw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>Customer/FirstName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>tIh8lK1V--+sXYJHonNdpg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>Customer/FirstName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---A--+3--+xLrYl---Y3A</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>Customer/FirstName</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>---K---L--+8nCUoQaESVA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>Customer/FirstName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>---x---r--+j--+6---iMA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>Customer/FirstName</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>Customer/LastName</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>Customer/LastName</com:dataElementId>
+    <com:displayName>Last Name</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---F--+e--+Tw7py--+iKg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>Customer/LastName</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+o---1--+1---ssyBGJw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>Customer/LastName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>Ip5A---q--+M--+6---psw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>Customer/LastName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>c2Yn0HYS--+hvjAyfB53qw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>Customer/LastName</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>---zADh+--+W7bAKtVYywg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>Customer/LastName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>jRwAQmhm--+KPIwFCgFdtA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>Customer/LastName</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>Customer/CustomerAddress</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>Customer/CustomerAddress</com:dataElementId>
+    <com:displayName>Customer Address</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>5T8H--+V--+A3RJx---Zhw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>Customer/CustomerAddress</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>XWwg---r--+Uz0ktUVklLQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>Customer/CustomerAddress</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>OPFYQh8J--+p--+6FCEJyA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>Customer/CustomerAddress</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---i---f--++--+oJ4Mzbg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>Customer/CustomerAddress</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>9qovGjMe--+f5AVn--+7Ag</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>Customer/CustomerAddress</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>xZs5--+H--+5--+qDmcPIA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>Customer/CustomerAddress</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>Customer/TelephoneNumber</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>Customer/TelephoneNumber</com:dataElementId>
+    <com:displayName>Telephone Number</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+kgDoC--+N--+J--+73w</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>Customer/TelephoneNumber</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>9</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>3</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>9HUU--+X--++---2---R-w</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>Customer/TelephoneNumber</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>HMZK---W--+W---y---xaw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>Customer/TelephoneNumber</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>lmYGnI9b--+7--+8---q5A</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>Customer/TelephoneNumber</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>DF92---4--+pJXh8UmJwHA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>Customer/TelephoneNumber</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>FXsO---A--+e---O--+enA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>Customer/TelephoneNumber</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>Customer/AccountNumber</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>Customer/AccountNumber</com:dataElementId>
+    <com:displayName>Account Number</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>7s16--+---+6--+9h2FQjg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>Customer/AccountNumber</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+u---u--+i--+a--+NYw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>Customer/AccountNumber</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---PH4ZV--+q--+X---Gew</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>Customer/AccountNumber</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>VlA3--+L--+kBrRN5l4rGQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>Customer/AccountNumber</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>Cg4k---4--+UoaJjsKNUgQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>Customer/AccountNumber</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>3X8a---N--+l--+GoPtDEw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>Customer/AccountNumber</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>StartDate</com:element>
+    <com:elementType>anyType</com:elementType>
+    <com:baseElement>date</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>StartDate</com:dataElementId>
+    <com:displayName>Start Date</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:minCardinality>0</com:minCardinality>
+    <com:maxCardinality>1</com:maxCardinality>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>-6ha---b--+u+F4O---Arg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>StartDate</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:abstract>false</data:abstract>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>---YmS46--+lDeVnTMdVVw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>StartDate</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>Promydsl--+qPIs5--+shA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>StartDate</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---I005q--+FQCFj--+M1Q</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>StartDate</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>---w---+--+q--+z--+f7w</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>StartDate</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>---xQV9---+E--+Dcux-+Q</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>StartDate</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup</com:element>
+    <com:elementType>SalesOrderLineGroup</com:elementType>
+    <com:baseElement>(Reusable Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup</com:dataElementId>
+    <com:displayName>Sales Order Line Group</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:minCardinality>1</com:minCardinality>
+    <com:maxCardinality>100</com:maxCardinality>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>fJhs3IAt--+NkNcm--+nfg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:abstract>false</data:abstract>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>100</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>li8W---E--+k6jpXmNFCxg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---M--+W--+91g5b---fAA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>mPEr--+c--+v---IfLEOHw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>--+Ijz0J--+aRlhQ---yUA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/Address</com:element>
+    <com:elementType>(Local Structure)</com:elementType>
+    <com:baseElement>(Local Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/Address</com:dataElementId>
+    <com:displayName>Address</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+mtp4c--+o---Zf61U9g</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---ztJEj--+c--+IiIc4sQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>kS4AMClP--+lS0M---+EkQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>--+RDXkC--+g2e1tqjNQig</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>CFQ9OQ5r--+1Sl4p---wdA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine</com:element>
+    <com:elementType>(Local Structure)</com:elementType>
+    <com:baseElement>(Local Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine</com:dataElementId>
+    <com:displayName>Sales Order Line</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>ro5E--+M--+j---vC3dTZw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>10</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+F--+E--+j---vjQ4NLw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---vJEpy--+Q--+7---DEg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>co52DcVg--+y--+X---Akg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>-2FwLKt5--+n--+Ch4hYuw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/Address/Street</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/Address/Street</com:dataElementId>
+    <com:displayName>Street</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>kkJt---e--+2zsIv--+LgA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Street</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>---FHS5i--+MmfBU--+BVA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Street</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---6---9--+xnxZz8sEs-w</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Street</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>XOlw--+C--+0---XAIw9lA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Street</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>---FIrkO--+lzxlgEm0u8A</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Street</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>--+Todh8--+2i1lt---pPw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Street</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/Address/Number</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/Address/Number</com:dataElementId>
+    <com:displayName>Number</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---mijsG--+C--+vWRswug</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Number</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>6Mkw---W--+r---L--+YZA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Number</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---6---D--+r---Q--+nNw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Number</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>n3Q0--+C--+Z--+A--+G9w</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Number</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>aKtva0xG--++WJVy---fEw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Number</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>--+Z6jA9--+L---H---ydw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/Number</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/Address/City</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/Address/City</com:dataElementId>
+    <com:displayName>City</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---b---z--+n---EbbNVeg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/City</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+x---y--+oWOE-7exTDw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/City</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+L--+I--+b2V1S--+UXQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/City</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>--+zlLgB--+a--+zN45n-w</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/City</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>aH1f--+8--+MIB1---+1RA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/City</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>3kQo0-1e--+Gv9V7PnwAMg</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/City</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/Address/PostalCode</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/Address/PostalCode</com:dataElementId>
+    <com:displayName>Postal Code</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+1QiAW--+a--+I--+6iQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/PostalCode</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>aZIQ--+7--+1---l--+rWQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/PostalCode</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>Vm404jB4--+E--+C--+79Q</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/PostalCode</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>qhc4---C--+QY7hgIk00SA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/PostalCode</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>2z5FUFw+--+J---WuPVi3w</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/PostalCode</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>Fzow---c--+Bd9Z78eUzhg</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/PostalCode</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/Address/State</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/Address/State</com:dataElementId>
+    <com:displayName>State</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>SZxG--+b--+-SEp8--+ngw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/State</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>qf1Er3kt--+kQGNL55AwpQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/State</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---L---x--+MKaV5--+Erw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/State</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>teA1K+JD--+70v0M---LIQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/State</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>--+33zgz--+iF41i---jDA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/State</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>F+dDV3BS--+rdZMo--+TyQ</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/Address/State</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/Product</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</com:dataElementId>
+    <com:displayName>Product</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>QsIK---G--+B--+J---zTA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</data:dataElementId>
+        <data:defaultValue>1</data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+z8-Es--+W---g---sCg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</data:dataElementId>
+        <data:defaultEnumerationReference>
+          <com:relationship>oracle.communications.studio.model.data.defaultEnumeration</com:relationship>
+          <com:element>1</com:element>
+          <com:elementType></com:elementType>
+        </data:defaultEnumerationReference>
+        <data:enumeration>
+          <com:id>1</com:id>
+          <data:value>1</data:value>
+          <data:description lang="[default]">ADSL</data:description>
+        </data:enumeration>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>Vw95---8--+f---a--+UCQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>Dfdl04Fd--+---+hBwohbg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</data:dataElementId>
+        <layout:hints>
+          <layout:panel page="Default" panel="Default">
+            <layout:controlType>DropDown</layout:controlType>
+          </layout:panel>
+        </layout:hints>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="true">
+        <com:id>xyMJ---W--+MoGob6PhzrA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>Vh9Xl41B--+0---B---R1w</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Product</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/Speed</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</com:dataElementId>
+    <com:displayName>Speed</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---sfApa--+A---s6UNESg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+        <data:defaultValue>1</data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>x3MeqA94--+iqDpB--+kWA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+        <data:defaultEnumerationReference>
+          <com:relationship>oracle.communications.studio.model.data.defaultEnumeration</com:relationship>
+          <com:element>1</com:element>
+          <com:elementType></com:elementType>
+        </data:defaultEnumerationReference>
+        <data:enumeration>
+          <com:id>1</com:id>
+          <data:value>1</data:value>
+          <data:description lang="[default]">6MB</data:description>
+        </data:enumeration>
+        <data:enumeration>
+          <com:id>2</com:id>
+          <data:value>2</data:value>
+          <data:description lang="[default]">20MB</data:description>
+        </data:enumeration>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---jf7wX--+e---e---ZyQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>--+t--+n--+W-nUb6a4S4A</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+        <layout:hints>
+          <layout:panel page="Default" panel="Default">
+            <layout:controlType>DropDown</layout:controlType>
+          </layout:panel>
+        </layout:hints>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="true">
+        <com:id>2SlcaaUr--+U--+A---4ZQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>WX93xP0f--+Paq4mBpEomw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementTagDetails">
+        <com:id>V+lE--+q--+H--+l---x+g</com:id>
+        <com:elementType>oracle.communications.studio.model.tag.StudioModelTagDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Speed</data:dataElementId>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/Profile</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</com:dataElementId>
+    <com:displayName>Profile</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>paUJRW8W--+0--+IPTp5qw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>wHlxuX8q--+c---Z---upA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</data:dataElementId>
+        <data:enumeration>
+          <com:id>1</com:id>
+          <data:value>1</data:value>
+          <data:description lang="[default]">High</data:description>
+        </data:enumeration>
+        <data:enumeration>
+          <com:id>2</com:id>
+          <data:value>2</data:value>
+          <data:description lang="[default]">Medium</data:description>
+        </data:enumeration>
+        <data:enumeration>
+          <com:id>3</com:id>
+          <data:value>3</data:value>
+          <data:description lang="[default]">Low</data:description>
+        </data:enumeration>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>8DlPB+5h--+P1sIQ---IVg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>5jRs---w--+Y6K1OjZgmbg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</data:dataElementId>
+        <layout:hints>
+          <layout:panel page="Default" panel="Default">
+            <layout:controlType>DropDown</layout:controlType>
+          </layout:panel>
+        </layout:hints>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="true">
+        <com:id>--+x---i--+S5QZucLZ0MQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>+7op4Otn--+rXaNRYhFuEg</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/Profile</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>ProvisionState</com:element>
+    <com:elementType>anyType</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>ProvisionState</com:dataElementId>
+    <com:displayName>Provision State</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:minCardinality>1</com:minCardinality>
+    <com:maxCardinality>1</com:maxCardinality>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>dR0B---H--+N--+iwC8K3w</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>ProvisionState</data:dataElementId>
+        <data:defaultValue>In Progress</data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:abstract>false</data:abstract>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>1</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+E---v--+M--+G--+-aQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>ProvisionState</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>aqF8cJJ+--+rgRh3--+xgg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>ProvisionState</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>AIgm--+E--+2--+htLEkUg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>ProvisionState</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>mCwkwTNd--+HtYskBBQu1g</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>ProvisionState</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>---X---w--+jPjdX--+Xpw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>ProvisionState</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/ServiceId</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</com:dataElementId>
+    <com:displayName>Service Id</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+IngtG--+Y--+0ZpQTYA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>10</data:minLength>
+        <data:maxLength>10</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>Jep5--+K--+0--+ocCpMVw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+A---l--+erSJhwlV7UQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>PTpy---5--+bOZdS--+s-A</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" query="" queryEnabled="false" valueEnabled="false">
+        <com:id>NXh5Ozhm--+v71xS--+Qdw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>c+RV8x5r--+s6Xk4---9VA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ServiceId</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/InventoryData</com:element>
+    <com:elementType>(Local Structure)</com:elementType>
+    <com:baseElement>(Local Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData</com:dataElementId>
+    <com:displayName>Inventory Data</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+3vFUk--+S--+jOFlH4Q</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+j---P--+U---A--+GsA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---eSbZD--+wLklcSzc-6g</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>---J---W--+B--+Q--+sCg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>DbEMUfYx--+Hfy0E--+JTQ</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/ActivationData</com:element>
+    <com:elementType>(Local Structure)</com:elementType>
+    <com:baseElement>(Local Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData</com:dataElementId>
+    <com:displayName>Activation Data</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>QnMMpbB6--+kOc5e---aKw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>iTUx---5--+IydQP---zig</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---im1cf--+db5g7--+lTw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>--+1pPo7--+7--+LmBEajg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>8mJf--+Z--+Tuxg8S+MBng</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</com:dataElementId>
+    <com:displayName>Error Notes</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---Hg4wO--+6vZIcMOpe7g</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>---o7wc9--+L---U--+-vQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>IfN0--+k--+hU1Uq3PJvlw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>--+lo6tR--+v--+zdEo4EQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>---mnEEK--+WIdgU6PlqiA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>---Y--+z--+e--+4HQVIng</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/ActivationData/ErrorNotes</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</com:dataElementId>
+    <com:displayName>Port</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>SAwX9z4L--+B---k5rQlvA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+Tn3YY--+RR6x+Bb0v8Q</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---k---y--+8--+Q--+Abw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---t---3--+4khwJQ1EM-g</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>aNo----D--+k---Pcc1iQg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>iK0DztNQ--+F---0MyAjvw</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/Port</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</com:dataElementId>
+    <com:displayName>Dslam Name</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>---P--+b--+R---6--+nkA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+W--+M--+5--+n---jrw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>-eVX---o--+FxygT8D8MLA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>+sxE---G--+H2dcs--+43g</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>U2tw961c--+IP2cKsJV3Iw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>---s---r--+T---e---1bA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/DslamName</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</com:dataElementId>
+    <com:displayName>Central Id</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>Q58a6BZ9--+wPIEs--+Lvw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+QsH08--+XTOZgD0lbrQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+E--+j--+F+scMjllKTg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---rC5oI--+syuhED1weew</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>Nv4e---3--+8nKtz---NeA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>l1R2---u--+4Ff8cYsYvcA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/CentralId</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</com:dataElementId>
+    <com:displayName>Error Notes</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>4-0S--+0--+C6rIp---QvA</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>--+A---c--+1---bmrd6Aw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>CIV9---z--+v--+---+fnw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>c4ILvkBI--+lWgVF--+7pA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>K0oAd-9i--+F---4JlBebw</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>YK5L---+--+itrh4---jBQ</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/InventoryData/ErrorNotes</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/LogisticData</com:element>
+    <com:elementType>(Local Structure)</com:elementType>
+    <com:baseElement>(Local Structure)</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData</com:dataElementId>
+    <com:displayName>Logistic Data</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+Fal0l--+xZ+B9--+sdg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>---B---+--+A--+eLkA4dg</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>---2bjMt--+Q---F---wdA</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>---wmHIW--+xZClz4j5IIg</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>--+9--+q--+miE87---JKA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+  <com:dataDictionaryNode>
+    <com:entity>ADSLService</com:entity>
+    <com:entityType>xsd</com:entityType>
+    <com:relationship>com.mslv.studio.core.data.dictionary.extension</com:relationship>
+    <com:element>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</com:element>
+    <com:elementType>xs:string</com:elementType>
+    <com:baseElement>string</com:baseElement>
+    <com:baseNamespace>http://www.w3.org/2001/XMLSchema</com:baseNamespace>
+    <com:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</com:dataElementId>
+    <com:displayName>Ship Code</com:displayName>
+    <com:displayName lang="en"></com:displayName>
+    <com:extension xsi:type="provisioning:ElementExtensionType"/>
+    <com:dataDictionaryDetails>
+      <com:detail xsi:type="data:dataElementCommonDetail">
+        <com:id>--+gYSU9--+6---0U6J4uw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementCommonDetails</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</data:dataElementId>
+        <data:defaultValue></data:defaultValue>
+        <data:deprecated>false</data:deprecated>
+        <data:minLength>0</data:minLength>
+        <data:maxLength>40</data:maxLength>
+        <data:minMultiplicity>0</data:minMultiplicity>
+        <data:maxMultiplicity>1</data:maxMultiplicity>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementEnumerationDetail">
+        <com:id>MzYnN85Q--+tNEQ4mlFBGw</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementEnumeration</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="data:dataElementInformationDetails">
+        <com:id>--+x8gZW--+n--+cxLZrIQ</com:id>
+        <com:elementType>oracle.communications.studio.model.data.StudioModelDataElementInformation</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="layout:hintDetail">
+        <com:id>iqlk--+T--+6---T--+84A</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.UIHintsDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</data:dataElementId>
+        <layout:hints/>
+      </com:detail>
+      <com:detail xsi:type="poms:valueComplexType" linkEnabled="false" overrideDictionaryValues="false" queryEnabled="false" valueEnabled="false">
+        <com:id>Bp4+xIEx--+z--+D--+qPQ</com:id>
+        <com:elementType>oracle.communications.sce.poms.model.data.ValueElementDetail</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</data:dataElementId>
+      </com:detail>
+      <com:detail xsi:type="specification:CharElementDetailType">
+        <com:id>---P--+S--+---+SYHobbA</com:id>
+        <com:elementType>oracle.communications.studio.inventory.model.data.StudioModelDataElementCharDetailType</com:elementType>
+        <data:dataElementId>SalesOrderLineGroup/SalesOrderLine/LogisticData/ShipCode</data:dataElementId>
+        <specification:startTimestamp>0</specification:startTimestamp>
+        <specification:endTimestamp>0</specification:endTimestamp>
+      </com:detail>
+    </com:dataDictionaryDetails>
+  </com:dataDictionaryNode>
+</com:modelEntity>

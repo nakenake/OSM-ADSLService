@@ -1,0 +1,135 @@
+<automationMap xmlns="http://www.metasolv.com/OMS/AutomationMap/2001/11/23" xmlns:am="http://www.metasolv.com/OMS/AutomationMap/2001/11/23" xmlns:db="http://www.metasolv.com/Provisioning/database/DatabasePlugin/2006/02/28" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metasolv.com/OMS/AutomationMap/2001/11/23 ./automationMap.xsd http://www.metasolv.com/Provisioning/database/DatabasePlugin/2006/02/28 ./databasePlugin.xsd ">
+<taskAutomator>
+	<pluginJndiName>Inventory.automatedtask.adslservice.InventoryRequest</pluginJndiName>
+	<ejbName>Inventory.automatedtask.adslservice.InventoryRequest</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQuerySender</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>          
+	<cartridgeNamespace>ADSLService</cartridgeNamespace>
+    <cartridgeVersion>1.0.0.0.0</cartridgeVersion>    
+	<receive xsi:type="am:InternalReceiver">
+		<mnemonic>Inventory</mnemonic>
+ 		<executionModes>do</executionModes>
+	</receive>	
+	
+	<implement xsi:type="am:XquerySender">
+		<to>
+			<jndiName>%{JNDI_INVENTORY_REQUEST_QUEUE}</jndiName>
+			<destinationType>javax.jms.Queue</destinationType>
+		</to>
+		<replyTo>
+			<jndiName>%{JNDI_INVENTORY_RESPONSE_QUEUE}</jndiName>
+			<destinationType>javax.jms.Queue</destinationType>
+		</replyTo>
+		<am:sendNullMessage>true</am:sendNullMessage>
+		<am:script>
+			<am:url>http://osm.leandro.exercise/consultaInventarioRequest.xqy</am:url>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:exception>
+			<am:status>failure</am:status>
+		</am:exception>
+	</implement>    			
+</taskAutomator><taskAutomator>
+	<pluginJndiName>Inventory.automatedtask.adslservice.InventoryResponse</pluginJndiName>
+	<ejbName>Inventory.automatedtask.adslservice.InventoryResponse</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQueryReceiver</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>          
+	<cartridgeNamespace>ADSLService</cartridgeNamespace>
+    <cartridgeVersion>1.0.0.0.0</cartridgeVersion>    
+	<receive xsi:type="am:ExternalReceiver">
+		<jmsSource>
+			<from>
+				<jndiName>%{JNDI_INVENTORY_RESPONSE_QUEUE}</jndiName>
+				<destinationType>javax.jms.Queue</destinationType>				
+			</from>			
+		</jmsSource>	
+		<correlation xsi:type="MessagePropertyCorrelation">
+			<property>JMSCorrelationID</property>
+		</correlation>	
+	</receive>
+	
+	<implement xsi:type="am:XqueryAutomator">
+		<am:script>
+			<am:url>http://osm.leandro.exercise/consultaInventarioResponse.xqy</am:url>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:updateOrder>true</am:updateOrder>
+		<am:exception>
+			<am:status>next</am:status>
+		</am:exception>
+	</implement>    			
+</taskAutomator><taskAutomator>
+	<pluginJndiName>Shipping.automatedtask.adslservice.ResponseShipping</pluginJndiName>
+	<ejbName>Shipping.automatedtask.adslservice.ResponseShipping</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQuerySender</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>          
+	<cartridgeNamespace>ADSLService</cartridgeNamespace>
+    <cartridgeVersion>1.0.0.0.0</cartridgeVersion>    
+	<receive xsi:type="am:ExternalReceiver">
+		<jmsSource>
+			<from>
+				<jndiName>%{JNDI_LOGISTIC_RESPONSE_QUEUE}</jndiName>
+				<destinationType>javax.jms.Queue</destinationType>				
+			</from>			
+		</jmsSource>	
+		<correlation xsi:type="MessagePropertyCorrelation">
+			<property>JMSCorrelationID</property>
+		</correlation>	
+	</receive>
+	
+	<implement xsi:type="am:XquerySender">
+		<to>
+			<jndiName>%{JNDI_CRM_REQUEST_QUEUE}</jndiName>
+			<destinationType>javax.jms.Queue</destinationType>
+		</to>
+		<replyTo>
+			<jndiName>%{JNDI_LOGISTIC_RESPONSE_QUEUE}</jndiName>
+			<destinationType>javax.jms.Queue</destinationType>
+		</replyTo>
+		<am:sendNullMessage>true</am:sendNullMessage>
+		<am:script>
+			<am:url>http://osm.leandro.exercise/envioLogisticoResponse.xqy</am:url>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:exception>
+			<am:status>failure</am:status>
+		</am:exception>
+	</implement>    			
+</taskAutomator><taskAutomator>
+	<pluginJndiName>Shipping.automatedtask.adslservice.RequestShipping</pluginJndiName>
+	<ejbName>Shipping.automatedtask.adslservice.RequestShipping</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQueryReceiver</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>          
+	<cartridgeNamespace>ADSLService</cartridgeNamespace>
+    <cartridgeVersion>1.0.0.0.0</cartridgeVersion>    
+	<receive xsi:type="am:InternalReceiver">
+		<mnemonic>Shipping</mnemonic>
+ 		<executionModes>do</executionModes>
+	</receive>	
+	
+	<implement xsi:type="am:XqueryAutomator">
+		<am:script>
+			<am:url>http://osm.leandro.exercise/envioLogisticoRequest.xqy</am:url>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:updateOrder>true</am:updateOrder>
+		<am:exception>
+			<am:status>failure</am:status>
+		</am:exception>
+	</implement>    			
+</taskAutomator>
+
+
+</automationMap>

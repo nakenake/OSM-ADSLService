@@ -1,0 +1,75 @@
+	
+	
+<orderStatePolicy name="ADSLServiceLifecycle"  xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">	
+	<description>ADSLServiceLifecycle</description>
+		<completedOrderState>
+			<updateOrderTransaction>
+				<condition>
+					<conditionName>defaultCondition</conditionName>
+					<expression>true()</expression>
+				</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>CustomerService</workgroup>
+					<workgroup>Automation</workgroup>
+				</permission>
+
+			</updateOrderTransaction>
+		</completedOrderState>
+		<inProgressState>
+			<raiseExceptionTransaction>
+				<condition>
+					<conditionName>defaultCondition</conditionName>
+					<expression>true()</expression>
+				</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>CustomerService</workgroup>
+					<workgroup>Automation</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</raiseExceptionTransaction>				
+			<updateOrderTransaction>
+				<condition>
+					<conditionName>defaultCondition</conditionName>
+					<expression>true()</expression>
+				</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>CustomerService</workgroup>
+					<workgroup>Automation</workgroup>
+				</permission>
+
+			</updateOrderTransaction>				
+		</inProgressState>	
+		<notStartedOrderState>
+			<deleteOrderTransaction>
+				<condition>
+					<conditionName>defaultCondition</conditionName>
+					<expression>true()</expression>
+				</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>CustomerService</workgroup>
+					<workgroup>Automation</workgroup>
+				</permission>
+
+			</deleteOrderTransaction>	
+			<updateOrderTransaction>
+				<condition>
+					<conditionName>defaultCondition</conditionName>
+					<expression>true()</expression>
+				</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>CustomerService</workgroup>
+					<workgroup>Automation</workgroup>
+				</permission>
+
+			</updateOrderTransaction>	
+		</notStartedOrderState>
+</orderStatePolicy>

@@ -1,0 +1,19 @@
+<workgroupDefinition name="CustomerService" xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+		
+	<description>CustomerService</description>
+	<permissions>
+		
+			<createdVersionedOrders/>		
+			<exceptionProcessing/>		
+			<onlineReports/>	 	
+			<priorityModification/>	 	
+			<referenceNumberModification/>	
+			<searchView/>	
+			<taskAssignment/>	
+			<worklistViewer/>	
+	</permissions>
+	<calendar>
+		<weeklyWorkHours>no_schedule</weeklyWorkHours>
+		<region>no_region</region>
+	</calendar>
+</workgroupDefinition>

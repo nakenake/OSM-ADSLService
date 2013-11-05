@@ -1,0 +1,66 @@
+<taskAutomator>
+	<pluginJndiName>Shipping.automatedtask.adslservice.ResponseShipping</pluginJndiName>
+	<ejbName>Shipping.automatedtask.adslservice.ResponseShipping</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQuerySender</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>          
+	<cartridgeNamespace>@cartridgeNamespace@</cartridgeNamespace>
+    <cartridgeVersion>@cartridgeVersion@</cartridgeVersion>    
+	<receive xsi:type="am:ExternalReceiver">
+		<jmsSource>
+			<from>
+				<jndiName>%{JNDI_LOGISTIC_RESPONSE_QUEUE}</jndiName>
+				<destinationType>javax.jms.Queue</destinationType>				
+			</from>			
+		</jmsSource>	
+		<correlation xsi:type="MessagePropertyCorrelation">
+			<property>JMSCorrelationID</property>
+		</correlation>	
+	</receive>
+	
+	<implement xsi:type="am:XquerySender">
+		<to>
+			<jndiName>%{JNDI_CRM_REQUEST_QUEUE}</jndiName>
+			<destinationType>javax.jms.Queue</destinationType>
+		</to>
+		<replyTo>
+			<jndiName>%{JNDI_LOGISTIC_RESPONSE_QUEUE}</jndiName>
+			<destinationType>javax.jms.Queue</destinationType>
+		</replyTo>
+		<am:sendNullMessage>true</am:sendNullMessage>
+		<am:script>
+			<am:url>http://osm.leandro.exercise/envioLogisticoResponse.xqy</am:url>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:exception>
+			<am:status>failure</am:status>
+		</am:exception>
+	</implement>    			
+</taskAutomator><taskAutomator>
+	<pluginJndiName>Shipping.automatedtask.adslservice.RequestShipping</pluginJndiName>
+	<ejbName>Shipping.automatedtask.adslservice.RequestShipping</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQueryReceiver</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>          
+	<cartridgeNamespace>@cartridgeNamespace@</cartridgeNamespace>
+    <cartridgeVersion>@cartridgeVersion@</cartridgeVersion>    
+	<receive xsi:type="am:InternalReceiver">
+		<mnemonic>Shipping</mnemonic>
+ 		<executionModes>do</executionModes>
+	</receive>	
+	
+	<implement xsi:type="am:XqueryAutomator">
+		<am:script>
+			<am:url>http://osm.leandro.exercise/envioLogisticoRequest.xqy</am:url>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:updateOrder>true</am:updateOrder>
+		<am:exception>
+			<am:status>failure</am:status>
+		</am:exception>
+	</implement>    			
+</taskAutomator>

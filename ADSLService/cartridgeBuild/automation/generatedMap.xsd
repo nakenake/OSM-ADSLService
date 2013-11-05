@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:import namespace="http://www.metasolv.com/OMS/AutomationMap/2001/11/23" schemaLocation="automationMap.xsd"/>
+  <xs:import namespace="http://www.metasolv.com/Provisioning/database/DatabasePlugin/2006/02/28" schemaLocation="databasePlugin.xsd"/>
+</xs:schema>

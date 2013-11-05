@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com:modelEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://www.mslv.com/studio/core/model/common" xmlns:proc="http://xmlns.oracle.com/communications/sce/osm/model/process" xmlns="http://xmlns.oracle.com/communications/sce/osm/model/process" xmlns:prov="http://xmlns.oracle.com/communications/sce/osm/model/provisioning" xmlns:task="http://xmlns.oracle.com/communications/sce/osm/model/process/task" xsi:type="proc:processType" name="ADSLService_Proccess" workstream="false">
+  <com:displayName>ADSLService_Proccess</com:displayName>
+  <com:saveVersion>11</com:saveVersion>
+  <com:id>---4hwZz--+V---K--+d2A</com:id>
+  <proc:orderType>
+    <com:entity>ADSLServiceOrder</com:entity>
+    <com:entityType>order</com:entityType>
+    <com:relationship>orderRef</com:relationship>
+  </proc:orderType>
+  <proc:expectedDuration>P0Y0M0DT0H0M86400S</proc:expectedDuration>
+  <proc:startTask>Start1</proc:startTask>
+  <proc:activity id="Start1" name="Start">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>169.00006</proc:Xcoordinate>
+      <proc:Ycoordinate>63.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task1" name="Inventory">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>168.0</proc:Xcoordinate>
+      <proc:Ycoordinate>170.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>Inventory</com:entity>
+      <com:entityType>automationTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task2" name="VerifyTask">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>168.0</proc:Xcoordinate>
+      <proc:Ycoordinate>318.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>VerifyTask</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:endType" id="End5" name="End">
+    <proc:diagramLocation>
+      <proc:Xcoordinate>168.0</proc:Xcoordinate>
+      <proc:Ycoordinate>739.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task3" name="Error">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>9.0</proc:Xcoordinate>
+      <proc:Ycoordinate>317.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>Error</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task12" name="Shipping">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>170.0</proc:Xcoordinate>
+      <proc:Ycoordinate>465.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>Shipping</com:entity>
+      <com:entityType>automationTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task16" name="VerifyTask">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>172.0</proc:Xcoordinate>
+      <proc:Ycoordinate>609.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>VerifyTask</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:transition id="Flow4" name="next">
+    <proc:from>Task1</proc:from>
+    <proc:to>Task2</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>false</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow5" name="failure">
+    <proc:from>Task1</proc:from>
+    <proc:to>Task3</proc:to>
+    <proc:status>failure</proc:status>
+    <proc:mandatoryCheck>false</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow8" name="back">
+    <proc:from>Task2</proc:from>
+    <proc:to>Task1</proc:to>
+    <proc:status>back</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow9" name="finish">
+    <proc:from>Task3</proc:from>
+    <proc:to>End5</proc:to>
+    <proc:status>finish</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow13" name="next">
+    <proc:from>Task2</proc:from>
+    <proc:to>Task12</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow15" name="failure">
+    <proc:from>Task12</proc:from>
+    <proc:to>Task3</proc:to>
+    <proc:status>failure</proc:status>
+    <proc:mandatoryCheck>false</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow17" name="back">
+    <proc:from>Task16</proc:from>
+    <proc:to>Task12</proc:to>
+    <proc:status>back</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow18" name="next">
+    <proc:from>Task12</proc:from>
+    <proc:to>Task16</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>false</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow19" name="finish">
+    <proc:from>Task16</proc:from>
+    <proc:to>End5</proc:to>
+    <proc:status>finish</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow22" name="">
+    <proc:from>Start1</proc:from>
+    <proc:to>Task1</proc:to>
+    <proc:status></proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow1" name="back">
+    <proc:from>Task3</proc:from>
+    <proc:to>Task2</proc:to>
+    <proc:status>back</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+</com:modelEntity>

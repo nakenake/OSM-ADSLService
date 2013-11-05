@@ -1,0 +1,22 @@
+
+<task name="VerifyTask" xsi:type="genericTaskType" xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25"
+ >	
+	<description>VerifyTask</description>
+	<state>accepted</state>
+	<state>completed</state>
+	<state>received</state>
+	<state>assigned</state>
+
+	<status>next</status>
+	<status>back</status>
+	<status>finish</status> 
+	<expectedDuration>P0Y0M0DT0H0M86400S</expectedDuration>
+	<responsible>System</responsible>
+	<scheduleType>SYSTEM</scheduleType>
+	<compensationStrategy>
+		<onTaskReevaluate>redo</onTaskReevaluate>
+		 
+		<onTaskRollback>undo</onTaskRollback>
+		
+	</compensationStrategy>
+</task>

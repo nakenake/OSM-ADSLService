@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Incremental build delta properties</comment>
+<entry key="automation.source.changed">false</entry>
+<entry key="xml.catalog.changed">false</entry>
+<entry key="automation.resource.changed">false</entry>
+<entry key="automation.lib.changed">false</entry>
+<entry key="custom.automation.changed">false</entry>
+</properties>
